@@ -47,8 +47,18 @@ function getNextDog() {
 
 function render() {
   document.getElementById('dog-swipe-main-img').innerHTML = dog.getDogHtml();
-  document.getElementById('dog-swipe-main-img').style.background = `url(${dog.getDogAvatarSrc()})`
-  document.getElementById('dog-swipe-main-img').style.backgroundSize = 'cover'
+  document.getElementById('dog-swipe-main-img').style.background = `url(${dog.getDogAvatarSrc()})`;
+  document.getElementById('dog-swipe-main-img').style.backgroundSize = 'cover';
+  if (dog.hasBeenLiked) {
+    document.getElementById('dog-swipe-heart').style.background = '#DBFFF4';
+  }
+  else if (dog.hasBeenSwiped) {
+    document.getElementById('dog-swipe-cross').style.background = '#FFE7EF'
+  }
+  else {
+    document.getElementById('dog-swipe-heart').style.background = '#FFFFFF'
+    document.getElementById('dog-swipe-cross').style.background = '#FFFFFF'
+  }
 }
 
 let dog = getNextDog();
