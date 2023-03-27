@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+/* typography */
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F8F8F8;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #B7B7B7;
+}
+
+/* layout */
+
+header {
+  background: #FFFFFF;
+}
+
+nav,
+.dog-swipe {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 81px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.logo {
+  width: 84x;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+}
+
+.dog-swipe-main-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: url('../images/dog-teddy.jpg');
+  background-size: cover;
+  width: 534px;
+  height: 751px;
+  position: relative;
+  padding: 0.75em;
+}
+
+.dog-name {
+  margin-bottom: 0.4em;
+}
+
+.dog-quote {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* like-cross-stamp */
+
+.dog-swipe-like,
+.dog-swipe-nope { 
+  width: 233px;
+  height: 116px;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+
+.dog-swipe-like,
+.dog-swipe-nope {
+  display: none;
+}
+
+/* buttons */
+
+.dog-swipe-heart,
+.dog-swipe-cross {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px #E9E9EA;
+  border-radius: 50%;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.dog-swipe-heart:hover {
+  transition: 0.5s;
+  background: #DBFFF4;
+}
+
+.dog-swipe-cross:hover {
+  transition: 0.5s;
+  background: #FFE7EF;
+}
+
+.dog-swipe-heart:not(:hover),
+.dog-swipe-cross:not(:hover){
+  transition: 0.5s;
+}
+
+/* utility */
+
+.gap-24 {
+  gap: 1.5em;
+}

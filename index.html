@@ -1,9 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
+    <head>
+        <!-- Poppins Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <h1>Tindog</h1>
+        <header>
+            <nav>
+                <div class="container">
+                    <img class="icon" src="images/icon-profile.png" alt="">
+                    <img class="logo" src="images/logo.png" alt="">
+                    <img class="icon" src="images/icon-chat.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="dog-swipe">
+                <div class="dog-swipe-main-img">
+                    <h3 class="dog-name">Teddy, 30</h3>
+                    <p class="dog-quote">How you doin?</p>
+                    <img class="dog-swipe-like" src="images/badge-like.png" alt="">
+                    <img class="dog-swipe-nope" src="images/badge-nope.png" alt="">
+                </div>
+                <div class="container gap-24">
+                    <img class="dog-swipe-cross" id="dog-swipe-cross" src="images/icon-cross.png" alt="">
+                    <img class="dog-swipe-heart" id="dog-swipe-heart" src="images/icon-heart.png" alt="">
+                </div>
+            </section>
+        </main>
         <script src="/index.js" type="module"></script>
     </body>
 </html>
