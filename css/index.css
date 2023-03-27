@@ -61,8 +61,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background: url('../images/dog-teddy.jpg');
-  background-size: cover;
+  background: white;
   width: 534px;
   height: 751px;
   position: relative;
@@ -89,11 +88,6 @@ nav {
   position: absolute;
   top: 55px;
   left: 20px;
-}
-
-.dog-swipe-like,
-.dog-swipe-nope {
-  display: none;
 }
 
 /* buttons */
